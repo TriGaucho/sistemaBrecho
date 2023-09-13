@@ -1,0 +1,11 @@
+Sistema de Controle Brechó
+
+O projeto visa controle de entrada e saida de roupas que pertencem a um cliente-fornecedor.
+Também é necessario saber o valor que a peça de roupa deu saida para repassar o percentual so cliente-fornecedor.
+
+Funcionalidades:
+Cadastro de cliente.
+Cadastro de peças de roupa que são vinculadas a um cliente.
+Dar saida da peça de roupa para outro cliente.
+Obter o valor da venda da peça de roupa e o valor a ser enviado ao cliente-fornecedor.
+Obter o controle "historico" da peça(cliente fornecedor e cliente-comprador).
