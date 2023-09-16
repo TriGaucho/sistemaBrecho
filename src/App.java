@@ -1,5 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Pessoa p = new Pessoa("Diogo", "51982860021");
+
+        System.out.println(p);
     }
 }
