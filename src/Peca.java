@@ -3,16 +3,16 @@ public class Peca {
     private String codigoPeca;
     private String tipoPeca;
     private String descricao;
-    private Float valorVenda;
-    private Float percentualRepasse;
+    private Double valorVenda;
+    private Double percentualRepasse;
     private String tamanho;
-    private Float valorRepassado;
+    private Double valorRepassado;
 
     public Peca(String codigoPeca,
             String tipoPeca,
             String descricao,
-            Float valorVenda,
-            Float percentualRepasse,
+            Double valorVenda,
+            Double percentualRepasse,
             String tamanho) {
         this.codigoPeca = codigoPeca;
         this.tipoPeca = tipoPeca;
@@ -26,15 +26,15 @@ public class Peca {
         return "Codigo: " + this.codigoPeca + "/Valor: " + this.valorVenda;
     }
 
-    public void setValorRepassado(Float valorRepassado) {
+    public void setValorRepassado(Double valorRepassado) {
         this.valorRepassado = valorRepassado;
     }
 
-    public void setValorVenda(Float valorVenda) {
+    public void setValorVenda(Double valorVenda) {
         this.valorVenda = valorVenda;
     }
 
-    public Float getValorPeca() {
+    public Double getValorPeca() {
         return this.valorVenda;
     }
 
@@ -65,15 +65,15 @@ public class Peca {
         this.descricao = descricao;
     }
 
-    public Float getValorVenda() {
+    public Double getValorVenda() {
         return valorVenda;
     }
 
-    public Float getPercentualRepasse() {
+    public Double getPercentualRepasse() {
         return percentualRepasse;
     }
 
-    public void setPercentualRepasse(Float percentualRepasse) {
+    public void setPercentualRepasse(Double percentualRepasse) {
         this.percentualRepasse = percentualRepasse;
     }
 
@@ -86,7 +86,7 @@ public class Peca {
         this.tamanho = tamanho;
     }
 
-    public Float getValorRepassado() {
+    public Double getValorRepassado() {
         return valorRepassado;
     }
 

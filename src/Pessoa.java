@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Pessoa {
     private String nome;
     private String telefone;
@@ -11,13 +14,15 @@ public class Pessoa {
     private String cidade;
     private String uf;
 
+    private List<Peca> listaPecas = new ArrayList<Peca>() ;
+    
     public Pessoa(String nome, String telefone) {
         this.nome = nome;
         this.telefone = telefone;
     }
 
     public String toString() {
-        return "Nome: " + this.nome + "/Contato: " + this.telefone;
+        return "Nome: " + this.nome + " - Contato: " + this.telefone;
     }
 
     public String getNome() {
@@ -108,4 +113,20 @@ public class Pessoa {
         this.uf = uf;
     }
 
+    public void cadastrarPeca(Peca peca) {
+        this.listaPecas.add(peca);
+    }
+
+    public void cadastrarPeca2(String codigoPeca,
+    String tipoPeca,
+    String descricao,
+    Double valorVenda,
+    Double percentualRepasse,
+    String tamanho) {
+        this.listaPecas.add(new Peca(codigoPeca, tipoPeca, descricao, valorVenda, percentualRepasse, tamanho));
+    }
+    
+    public List<Peca> getListaPecas(){
+        return this.listaPecas;
+    }
 }
