@@ -10,4 +10,5 @@ Linguagem: Java SE
 DIagrama de Classes: https://lucid.app/lucidchart/1b6c8504-081a-405e-b34b-742568ccf899/edit?viewport_loc=6362%2C-893%2C4992%2C2355%2C0_0&invitationId=inv_29b7c622-2a6e-408c-9648-1b1126ed1c31
 
 - No diagrama faltou a multiplicidade (cardinalidade) nas associações
-- Venda tem um cliente e varios produtos.
+- Venda tem um cliente(pessoa) e varios produtos.
+- Peça tem um fornecedor(pessoa)
