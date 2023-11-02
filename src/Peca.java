@@ -7,6 +7,7 @@ public class Peca {
     private Double percentualRepasse;
     private String tamanho;
     private Double valorRepassado;
+    private Pessoa fornecedor;
 
     public Peca(String codigoPeca,
             String tipoPeca,
@@ -90,4 +91,11 @@ public class Peca {
         return valorRepassado;
     }
 
+    public void setFornecedor(Pessoa fornecedor) {
+        this.fornecedor = fornecedor;
+    }
+
+    public Pessoa consultaFornecedor() {
+        return this.fornecedor;
+    }
 }
